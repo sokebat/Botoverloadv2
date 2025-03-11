@@ -146,7 +146,7 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-purple-500 text-white text-lg"
+                className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-purple-500 text-white text-lg"
                 required
               />
             </div>
