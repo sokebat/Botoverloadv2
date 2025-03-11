@@ -1,7 +1,6 @@
 import { ContactFormValues } from "@/schema/contact-form-schema";
 
-const BASE_URL = process.env.Next_PUBLIC_API_URL;
-
+const BASE_URL = 'https://www.iagentbot.com/api/landing';
 
 export const submitContactForm = async (formData: ContactFormValues) => {
   try {

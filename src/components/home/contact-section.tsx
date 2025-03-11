@@ -36,12 +36,10 @@ const ContactSection = () => {
     try {
       const response = await submitContactForm(data);
       if (response.success) toast.success(response.message);
-      else toast.error(response.message);
+      else toast.error("Failed to send message.");
       reset();
     } catch (error) {
-      toast.error(
-        error instanceof Error ? error.message : "Something went wrong."
-      );
+      toast.error("Something went wrong.");
     } finally {
       setLoading(false);
     }
